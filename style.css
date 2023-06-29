@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(156, 236, 156);
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(62, 124, 62), rgb(78, 153, 78),rgb(89, 212, 89));
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding:3px ;
+    color: white;
+}
+nav{
+    text-align: left;
+}
+nav>a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    margin: 5px;
+}
+nav>a:hover{
+    font-size: 24px;
+    color:black;
+    margin: 50px;
+}
+h1#titulo{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+h2#subtitulo{
+    font-weight: lighter;
+    font-size: medium;
+    width: 300px;
+    margin: auto;
+    padding-bottom:15px ;
+}
