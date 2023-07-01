@@ -133,7 +133,7 @@ section#finalizando{
    margin: 20px 20px 0px 20px;
    border-radius: 5px;
    color: black;
-   padding-bottom: 20px;
+   padding-bottom: 10px;
 }
 
 section#finalizando>h3{
@@ -149,9 +149,11 @@ section#finalizando>h3{
 }
 
 .listas{
-    display: inline-table;
-    margin-left: 200px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
 }
+
 
 .listas>li:hover{
     color: black;
@@ -170,7 +172,7 @@ div>p{
     font-weight: normal;
     text-indent: 30px;
     padding-left: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     margin-top: 10px;
 }
 
