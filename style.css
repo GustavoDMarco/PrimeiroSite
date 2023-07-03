@@ -1,9 +1,21 @@
 @charset "UTF-8";
 
+@font-face{
+    font-family: Android;
+    src: url(guia/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+}
+
 body{
-    margin: 0px;
+    margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(156, 236, 156);
+}
+
+a{
+    color: black;  
+    font-style: italic;
+    font-weight: bold;
 }
 
 header{
@@ -11,10 +23,14 @@ header{
     text-align: center;
     padding:3px ;
     color: white;
-    margin-bottom: 50px;
 }
 nav{
     text-align: left;
+    border-top: 2px solid black;
+    border-bottom:2px solid black ;
+    margin-bottom: 50px;
+    padding: 5px;
+    background-color: rgb(62, 124, 62);
 }
 nav>a{
     text-decoration: none;
@@ -23,10 +39,11 @@ nav>a{
     margin: 5px;
 }
 nav>a:hover{
-    font-size: 24px;
+    font-size: 22px;
     color:black;
-    margin: 50px;
+    margin: 0px 20px 0px 20px;
 }
+
 h1#titulo{
     font-weight: bold;
     font-size: 30px;
@@ -43,8 +60,8 @@ h2#subtitulo{
 
 main{
     background-color: aliceblue;
-    height: auto;
-    width: 800px;
+    min-width: 300px;
+    max-width: 800px;
     margin: auto;
     border-radius: 5px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.342);
@@ -69,74 +86,67 @@ section#historia>h2{
     font-weight: bold;
     color: rgb(37, 131, 37);
     padding: 5px;
-    margin: 10px 5px 5px 5px;
+    margin: 10px 5px 10px 5px;
     background-image: linear-gradient(to right, rgba(50, 219, 120, 0.562),rgba(67, 216, 146, 0.411),aliceblue);
 }
 
 section#historia>p{
     text-indent: 30px;
     margin: 0px 5px 5px 10px;
-    font-weight: normal;
 }
 
-div#IMG1{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 65px;
+img{
+    width: 100%;
+}
+
+.bugdroid{
+    width: 50%;
+    margin:auto;
+    display: block;
+}
+
+iframe{
+    width: 70%;
+    margin: auto;
+    display: block;
+}
+
+div#video{
+    background-color: rgb(37, 131, 37);
+    margin-top: 8px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
+    padding: 10px 0px 10px 0px;
 }
 
 section#novoMascote{
-    padding: 10;
+    padding: 10px;
 }
 
-section#novoMascote>h1{
-    background-image: linear-gradient(to right, rgba(50, 219, 120, 0.562),rgba(67, 216, 146, 0.411),aliceblue);
+section#novoMascote>h2{
     font-family: fantasy;
     font-size: 30px;
     font-weight: bold;
     color: rgb(37, 131, 37);
     padding: 5px;
-    margin: 2px 5px 5px 5px;
+    margin: 0px 5px 5px 5px;
+    background-image: linear-gradient(to right, rgba(50, 219, 120, 0.562),rgba(67, 216, 146, 0.411),aliceblue);
 }
 
 section#novoMascote>p{
     text-indent: 30px;
-    margin: 0px 5px 0px 10px;
-    font-weight: normal;
+    margin: 0px 5px 5px 10px;
 }
 
-div#IMG2{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 65px;
-}
-
-div#IMG3{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-left: 65px;
-}
-
-div#video{
-    background-color: rgb(37, 131, 37);
-    margin: 0px;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
-}
-
-div#video>iframe{
-    padding-left: 120px;
-    padding-right: 100px;
-}
-
-section#finalizando{
+aside{
    background-color:  rgb(156, 236, 156);
    margin: 20px 20px 0px 20px;
    border-radius: 5px;
    color: black;
    padding-bottom: 10px;
+   
 }
 
-section#finalizando>h3{
+aside>h3{
     font-family: fantasy;
     font-size: 24px;
     font-weight: normal;
@@ -151,27 +161,25 @@ section#finalizando>h3{
 .listas{
     display: inline-block;
     text-align: center;
-    margin-left: 100px;
+    margin: auto;
 }
 
-
-.listas>li:hover{
+.listas>li{
     color: black;
-    font-weight: bolder;
-    text-decoration: underline;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-section#finalizando>p{
-    margin: 0px 5px 0px 10px;
-    font-weight: normal;
+aside>p{
+    margin: 0px 5px 5px 10px;
     text-indent: 30px;
 }
 
 div>p{
-    margin: 0px 5px 0px 10px;
-    font-weight: normal;
+    margin: 0px 5px 5px 10px;
     text-indent: 30px;
-    padding-left: 20px;
+    padding-left: 10px;
     padding-bottom: 15px;
     margin-top: 10px;
 }
@@ -179,11 +187,11 @@ div>p{
 footer{
     margin-top: 50px;
     background-color:rgb(62, 124, 62) ;
-    padding: 20px;
+    padding: 5px;
 }
 
 footer>p{
-    margin: 10px;
+    margin: 8px;
     font-weight: bold;
     text-align: center;
 }
