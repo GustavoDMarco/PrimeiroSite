@@ -12,12 +12,6 @@ body{
     background-color: rgb(156, 236, 156);
 }
 
-a{
-    color: black;  
-    font-style: italic;
-    font-weight: bold;
-}
-
 header{
     background-image: linear-gradient(to top, rgb(62, 124, 62), rgb(78, 153, 78),rgb(89, 212, 89));
     text-align: center;
@@ -26,8 +20,8 @@ header{
 }
 nav{
     text-align: left;
-    border-top: 2px solid black;
-    border-bottom:2px solid black ;
+    border-top: 1px solid black;
+    border-bottom:1px solid black ;
     margin-bottom: 50px;
     padding: 5px;
     background-color: rgb(62, 124, 62);
@@ -36,18 +30,30 @@ nav>a{
     text-decoration: none;
     font-weight: bold;
     color:white;
-    margin: 5px;
+    padding: 5px;
+    margin: 2px;
 }
 nav>a:hover{
     font-size: 22px;
     color:black;
-    margin: 0px 20px 0px 20px;
+    margin: 0px 2px 0px 2px;
+    padding: 5px;
+    background-color: rgb(156, 236, 156);
+    border-radius: 2px;
+    transition-duration: 0.5s;
+}
+
+a{
+    color: black;  
+    font-style: italic;
+    font-weight: bold;
 }
 
 h1#titulo{
     font-weight: bold;
     font-size: 30px;
     margin-bottom: 15px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.445);
 }
 
 h2#subtitulo{
@@ -97,10 +103,11 @@ section#historia>p{
 
 img{
     width: 100%;
+    padding-bottom: 5px;
 }
 
 .bugdroid{
-    width: 50%;
+    max-width: 350px;
     margin:auto;
     display: block;
 }
@@ -113,7 +120,6 @@ iframe{
 
 div#video{
     background-color: rgb(37, 131, 37);
-    margin-top: 8px;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.253);
     padding: 10px 0px 10px 0px;
 }
@@ -155,20 +161,11 @@ aside>h3{
     margin-top: 5px;
     margin-bottom: 5px;
     background-color: rgb(37, 131, 37);
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
-.listas{
-    display: inline-block;
-    text-align: center;
-    margin: auto;
-}
-
-.listas>li{
-    color: black;
-    display: block;
-    font-weight: bold;
-    text-decoration: none;
+aside>ul{
+    columns: 2;
 }
 
 aside>p{
